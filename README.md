@@ -11,9 +11,10 @@ Code bám đúng biểu đồ lớp thiết kế trong báo cáo: trang JSP (`we
 ```
 LibMan/
 ├── src/model/      12 lớp thực thể (Member9, Reader9, Document9, BookLoanSlip9, ...)
-├── src/dao/        DAO9 (kết nối CSDL) + DocumentDAO9, SupplierDAO9, BookLoanSlipDAO9, ReaderDAO9, ReaderStatDAO9
+├── src/dao/        DAO9 (kết nối CSDL) + MemberDAO9 (đăng nhập), DocumentDAO9, SupplierDAO9, BookLoanSlipDAO9, ReaderDAO9, ReaderStatDAO9
 ├── web/
-│   ├── index.jsp           chọn vai trò Độc giả / Nhân viên
+│   ├── index.jsp           chuyển tới trang đăng nhập
+│   ├── view/member/        LoginPage9 (đăng nhập, đăng xuất)
 │   ├── style.css
 │   ├── view/reader/        ReaderHomePage9, SearchDocumentPage9, DocumentDetailPage9
 │   ├── view/staff/         StaffHomePage9, SelectStatPage9, ReaderStatPage9, ReaderLoanPage9, LoanSlipDetailPage9
@@ -72,9 +73,11 @@ Mở trình duyệt: http://localhost:8080/LibMan/
 
 ## Chạy thử theo kịch bản
 
-**Module 1:** Độc giả → Tìm kiếm tài liệu → nhập `Cấu trúc dữ liệu`, chọn thể loại *Công nghệ thông tin*, năm 2019 – 2022 → Tìm kiếm (ra 3 tài liệu) → Xem chi tiết *Cấu trúc dữ liệu và giải thuật* (có sẵn 14/15, lịch sử 3 phiếu).
+Tài khoản mẫu (mật khẩu `123456`, chỉ để demo): độc giả `vana` (Nguyễn Văn A), nhân viên `hang` (Lê Thị Thu Hằng).
 
-**Module 2:** Nhân viên → Xem báo cáo thống kê → *Thống kê độc giả theo lượt mượn*, từ 01/07/2026 đến 31/07/2026 → Xem thống kê (A: 3, B: 2, C: 1) → Xem chi tiết Nguyễn Văn A (3 phiếu) → Chi tiết phiếu PM-2026-0230 (3 tài liệu).
+**Module 1:** đăng nhập `vana` → Tìm kiếm tài liệu → nhập `Cấu trúc dữ liệu`, chọn thể loại *Công nghệ thông tin*, năm 2019 – 2022 → Tìm kiếm (ra 3 tài liệu) → Xem chi tiết *Cấu trúc dữ liệu và giải thuật* (có sẵn 14/15, lịch sử 3 phiếu).
+
+**Module 2:** đăng nhập `hang` → Xem báo cáo thống kê → *Thống kê độc giả theo lượt mượn*, từ 01/07/2026 đến 31/07/2026 → Xem thống kê (A: 3, B: 2, C: 1) → Xem chi tiết Nguyễn Văn A (3 phiếu) → Chi tiết phiếu PM-2026-0230 (3 tài liệu).
 
 ## Lỗi thường gặp
 | Hiện tượng | Cách xử lý |

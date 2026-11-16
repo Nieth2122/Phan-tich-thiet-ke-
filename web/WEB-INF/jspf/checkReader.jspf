@@ -1,0 +1,7 @@
+<%
+    // Chỉ độc giả đã đăng nhập mới được vào trang này
+    if (!(session.getAttribute("member") instanceof model.Reader9)) {
+        response.sendRedirect(request.getContextPath() + "/view/member/LoginPage9.jsp");
+        return;
+    }
+%>

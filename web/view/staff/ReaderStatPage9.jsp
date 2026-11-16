@@ -1,5 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ page import="java.util.*, java.text.SimpleDateFormat, dao.ReaderStatDAO9, model.ReaderStat9" %>
+<%@ include file="/WEB-INF/jspf/checkStaff.jspf" %>
 <%
     // Nhận khoảng ngày từ SelectStatPage9 (dạng yyyy-MM-dd)
     String fromDate = request.getParameter("fromDate");

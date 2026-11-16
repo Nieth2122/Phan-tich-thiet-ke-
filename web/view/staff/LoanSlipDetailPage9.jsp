@@ -1,5 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ page import="java.text.SimpleDateFormat, dao.BookLoanSlipDAO9, model.*" %>
+<%@ include file="/WEB-INF/jspf/checkStaff.jspf" %>
 <%
     // Nhận mã phiếu mượn từ ReaderLoanPage9
     int loanSlipId = Integer.parseInt(request.getParameter("loanSlipId"));

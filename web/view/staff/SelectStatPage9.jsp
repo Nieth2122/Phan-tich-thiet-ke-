@@ -1,4 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ include file="/WEB-INF/jspf/checkStaff.jspf" %>
 <%
     // Đọc lựa chọn của nhân viên (ngày có dạng yyyy-MM-dd do ô input type=date gửi lên)
     String statType = request.getParameter("statType");

@@ -1,5 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ page import="java.util.*, dao.DocumentDAO9, model.DocumentStat9" %>
+<%@ include file="/WEB-INF/jspf/checkReader.jspf" %>
 <%!
     // Đổi ký tự đặc biệt khi in lại dữ liệu người dùng nhập (tránh chèn mã HTML)
     String esc(String s) {

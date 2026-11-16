@@ -1,5 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ page import="java.util.*, java.text.SimpleDateFormat, dao.*, model.*" %>
+<%@ include file="/WEB-INF/jspf/checkStaff.jspf" %>
 <%
     // Nhận mã độc giả và khoảng ngày từ ReaderStatPage9
     int readerId = Integer.parseInt(request.getParameter("readerId"));

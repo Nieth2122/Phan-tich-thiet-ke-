@@ -1,5 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ page import="java.util.*, java.text.SimpleDateFormat, dao.*, model.*" %>
+<%@ include file="/WEB-INF/jspf/checkReader.jspf" %>
 <%!
     // In ngày dạng dd/MM/yyyy, ngày trống thì in "—"
     String fmt(Date d) { return d == null ? "—" : new SimpleDateFormat("dd/MM/yyyy").format(d); }

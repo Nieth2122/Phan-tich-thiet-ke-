@@ -43,3 +43,5 @@ button, .button {
 .error { color: #b00020; font-weight: bold; }
 .empty { color: #666; font-style: italic; }
 .menu a { display: block; margin: 8px 0; font-size: 18px; }
+.login { max-width: 420px; }
+.login input { width: 220px; }
