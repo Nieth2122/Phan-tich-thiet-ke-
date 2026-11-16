@@ -1,0 +1,45 @@
+/* Giao diện chung cho mọi trang của LibMan */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f6f8;
+    color: #222;
+}
+.header {
+    background: #1f4e79;
+    color: #fff;
+    padding: 12px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header a { color: #fff; }
+.content {
+    max-width: 1000px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px 24px;
+    border: 1px solid #ddd;
+}
+h2 { margin-top: 0; }
+h3 { margin-bottom: 8px; }
+table { border-collapse: collapse; width: 100%; margin-bottom: 16px; }
+th, td { border: 1px solid #ccc; padding: 6px 8px; text-align: left; vertical-align: top; }
+th { background: #dae8fc; }
+.info td:first-child { width: 180px; font-weight: bold; background: #f5f5f5; }
+.filter label { margin-right: 12px; }
+.filter div { margin: 6px 0; }
+input[type=text], input[type=number], input[type=date], select { padding: 4px; }
+button, .button {
+    padding: 6px 14px;
+    background: #1f4e79;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+}
+.button.secondary { background: #888; }
+.error { color: #b00020; font-weight: bold; }
+.empty { color: #666; font-style: italic; }
+.menu a { display: block; margin: 8px 0; font-size: 18px; }

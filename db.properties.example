@@ -1,0 +1,10 @@
+# Copy file này thành db.properties rồi sửa cho đúng máy của bạn.
+# db.properties KHÔNG được đưa lên GitHub (đã có trong .gitignore).
+
+db.url=jdbc:sqlserver://localhost:1433;databaseName=LibManDB;encrypt=true;trustServerCertificate=true
+db.user=libman_app
+db.password=DOI_MAT_KHAU_O_DAY
+
+# Ngày dùng để xét phiếu mượn quá hạn.
+# Để trống = ngày hiện tại. Đặt 2026-08-15 để chạy demo ra đúng số liệu trong kịch bản.
+app.today=2026-08-15

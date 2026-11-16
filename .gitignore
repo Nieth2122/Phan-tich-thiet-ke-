@@ -1,0 +1,8 @@
+# Mật khẩu CSDL - không đưa lên GitHub
+db.properties
+
+# File sinh ra khi build
+web/WEB-INF/classes/
+
+# Driver JDBC tải riêng (xem README)
+web/WEB-INF/lib/*.jar
